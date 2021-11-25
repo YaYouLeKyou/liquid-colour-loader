@@ -1,0 +1,31 @@
+body {
+  background: rgba(0,0,0,0.1);
+  padding-top: 100px;
+}
+.loader{
+  position: relative;
+  margin: 100px auto;
+  height: 150px;
+  width: 150px;
+  background: transparent;
+  border: 20px dash #f0f0f9;
+  border-radius: 50%;
+  border-top: 20px dashed #99cf90; 
+  box-shadow: 0 0 30px black, inset 0 0 10px 0 black;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    border-top: 20px solid #ff0000; 
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top: 20px solid #ffff00; 
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 20px solid #00ff00; 
+  }
+}
